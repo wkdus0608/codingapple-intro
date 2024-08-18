@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p id="title">Alert Box</p>
+        <button id="alert-box-close" onclick="알림창('none', '.')">닫기</button>
+    </div>
+    <button onclick="알림창('block', '아이디 입력하라긔~')">Button1</button>
+    <button onclick="알림창('block', '비번 입력하라긔~')">Button2</button>
+
+
+
+    <script>
+        function 알림창(state, text) {
+            document.getElementById('alert').style.display = state;
+            document.getElementById('title').innerText = text;
+        }
+
+    </script>
+
+
+</body>
+</html>
